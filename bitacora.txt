@@ -1,0 +1,4 @@
+Se creo el repositorio
+Se creo el branch develop
+se dio commit al archivo de bitacora
+se subieron los cambios al branch develop
