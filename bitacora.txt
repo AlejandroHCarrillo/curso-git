@@ -1,4 +1,7 @@
-Se creo el repositorio
-Se creo el branch develop
-se dio commit al archivo de bitacora
-se subieron los cambios al branch develop
+Se creo el repositorio				git init
+Se creo el branch develop			git checkout -b develop
+Se agregaro el archivo bitacora al stage	git add .
+se dio commit al archivo de bitacora		git commit -m "Creacion dela bitacora"
+se subieron los cambios al branch develop	
+Se modifico el archivo de bitacora
+Se cambio el mensaje del ultimo commit		git commit --amend -m "Creacion de la bitacora de trabajo"
