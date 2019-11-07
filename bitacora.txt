@@ -5,3 +5,4 @@ se dio commit al archivo de bitacora		git commit -m "Creacion dela bitacora"
 se subieron los cambios al branch develop	
 Se modifico el archivo de bitacora
 Se cambio el mensaje del ultimo commit		git commit --amend -m "Creacion de la bitacora de trabajo"
+Se creo el branch master			git branch master
