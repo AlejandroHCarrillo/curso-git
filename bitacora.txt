@@ -9,3 +9,4 @@ Se creo el branch master			        git branch master
 Ver el log con formato                      git log --oneline --decorate --all --graph 
 Crear alias para Log con formato            git config --global alias.lg "log --oneline --decorate --all --graph"
 Usar el nuevo alias                         git lg
+Crear alias status una linea con branch     git config --global alias.s "status -s -b"
