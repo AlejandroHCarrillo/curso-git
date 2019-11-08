@@ -6,3 +6,5 @@ Ejecutar el siguiente comando ´´npm install´´
 Se van a omitir estos archivos
 
 ## Commit 1 para probar Hard reset
+
+## Commit 2 para probar Mixed reset
