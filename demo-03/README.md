@@ -4,3 +4,5 @@ Ejecutar el siguiente comando ´´npm install´´
 
 ## Omitir archivos 
 Se van a omitir estos archivos
+
+## Commit 1 para probar Hard reset
