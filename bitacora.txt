@@ -16,6 +16,7 @@ Para un archivo del stage                   git reset HEAD [Archivo.ext]
 Para descartar los cambios de un archivo    git checkout --[Archivo.ext]
 Agregar archivos
 Omitir archivos 
+
 Regresar a un commit especifico (34443de es el identificador del commit)
                                             git reset --soft 34443de
 Regresar a un commit especifico MANTIENE LOS ARCHIVOS MODIFICADOS (34443de es el identificador del commit)
@@ -24,8 +25,7 @@ Regresara un commit especifico DESTRUYE la historia posterior al commit(34443de 
                                             git reset --hard 34443de
 Ver todos los commits aunque los hallamos borrado soft o hard
                                             git reflog
-Regresar al commmit que sea usando el reset --hard
-                                            git reset --hard [4d234d4]
+
 Renombrar o mover un archivo usando git     git mv viejonombre.txt nuevonombre.txt
 Eliminar un archivo usando git              git rm archivo.txt
 Actualiza el estatus de los archivos        git add -u 
