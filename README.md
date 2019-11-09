@@ -1,31 +1,44 @@
 ## Crear el repositorio				        
 git init
+
 ## Creo el branch develop			        
 git checkout -b develop
-## Se agregaro el archivo bitacora al stage	
+
+## Agregar el archivo bitacora al stage	
 git add .
-## se dio commit al archivo de bitacora		
+
+## Dar commit al archivo de bitacora		
 git commit -m "Creacion de la bitacora"
-## se subieron los cambios al branch develop	
-## Se modifico el archivo de bitacora
-## Se cambio el mensaje del ultimo commit		
+
+* Subir los cambios al branch develop	
+* Modificar el archivo de bitacora
+
+## Cambiar el mensaje del ultimo commit		
 git commit --amend -m "Creacion de la bitacora de trabajo"
-## Se creo el branch master			        
+
+## Crear el branch master			        
 git branch master
-## Se modifico la bitacora en el branch Master
+
+* Modificar la bitacora en el branch Master
+
 ## Ver el log con formato                      
 git log --oneline --decorate --all --graph 
+
 ## Crear alias para Log con formato            
 git config --global alias.lg "log --oneline --decorate --all ## --graph"
+
 ## Usar el nuevo alias                         
 git lg
+
 ## Crear alias status una linea con branch     
 git config --global alias.s "status -s -b"
 
 ## Ver las diferencias del archivo original    
 git diff / git diff --staged
+
 ## Para un archivo del stage                   
 git reset HEAD [Archivo.ext]
+
 ## Para descartar los cambios de un archivo    
 git checkout --[Archivo.ext]
 
