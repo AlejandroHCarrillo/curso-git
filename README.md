@@ -1,9 +1,46 @@
-## Pasos de instalacion 
+## Crear el repositorio				        
+git init
 
-Ejecutar el siguiente comando ´´npm install´´
+## Creo el branch develop			        
+git checkout -b develop
 
-## Omitir archivos 
-Se van a omitir estos archivos
+## Agregar el archivo bitacora al stage	
+git add .
+
+## Dar commit al archivo de bitacora		
+git commit -m "Creacion de la bitacora"
+
+* Subir los cambios al branch develop	
+* Modificar el archivo de bitacora
+
+## Cambiar el mensaje del ultimo commit		
+git commit --amend -m "Creacion de la bitacora de trabajo"
+
+## Crear el branch master			        
+git branch master
+
+* Modificar la bitacora en el branch Master
+
+## Ver el log con formato                      
+git log --oneline --decorate --all --graph 
+
+## Crear alias para Log con formato            
+git config --global alias.lg "log --oneline --decorate --all ## --graph"
+
+## Usar el nuevo alias                         
+git lg
+
+## Crear alias status una linea con branch     
+git config --global alias.s "status -s -b"
+
+## Ver las diferencias del archivo original    
+git diff / git diff --staged
+
+## Para un archivo del stage                   
+git reset HEAD [Archivo.ext]
+
+## Para descartar los cambios de un archivo    
+git checkout --[Archivo.ext]
 
 ## Commit 1 para probar Hard reset
 git commit -am "Commit 1 para probar Hard reset"
@@ -44,7 +81,7 @@ Elimino el 2do commit, Quito del stage los archivos jpg y el archivo README.md p
 * d1b56fb Comandos para resetear commits
 * ...
 
-## Eliminar 2do commit usando Mixed reset           git reset --hard d1b56fb
+## Eliminar 3er commit usando Hard reset           git reset --hard d1b56fb
 Quito el archivo jpg que se habia agregado en el commit 2
 Conservo como WIP los cambios en README.md el primer archivo jpg tambien esta en WIP
 

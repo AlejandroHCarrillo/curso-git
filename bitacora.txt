@@ -14,8 +14,6 @@ Crear alias status una linea con branch     git config --global alias.s "status 
 Ver las diferencias del archivo original    git diff / git diff --staged
 Para un archivo del stage                   git reset HEAD [Archivo.ext]
 Para descartar los cambios de un archivo    git checkout --[Archivo.ext]
-Agregar archivos
-Omitir archivos 
 
 Regresar a un commit especifico (34443de es el identificador del commit)
                                             git reset --soft 34443de
