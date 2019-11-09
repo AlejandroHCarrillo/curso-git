@@ -131,6 +131,33 @@ git tag -a v.1.1.0 -m "Version 1.1.0"
 ## Agregar un tag a un commit especifico (b4b05e6)
 git tag -a v.0.0.1 [b4b05e6] -m "Version inicial"
 
-
 ## Eliminar Tag 
 git tag -d [nombre-del-tag]
+
+# Usar el STASH
+## Ver el contenido del stash
+git stash list
+git stash list --stat       Muestra mas informacion de cada entrada del stash
+gis show stash @[idStash]   Muestra el detalle de la estrada del estash
+
+## Agregar el trabajo en proceso al stash
+git stash 
+git stash save
+git stash save "Mensaje"    Guarda el trabajo en proceso con un mensaje descriptivo
+
+## Recuperar el ultimo stash
+git stash apply
+
+## Recuparar un stash especifico
+git stash apply [IdStash]
+
+## Elimina una entrada del stash
+Cuando hay conflictos no se elimina la entrada del stash, por lo que hay que hacelo manualmente
+git stash drop 
+git stash drop @[IdStash]
+
+## Aplicar y limpiar el stash git stash apply + git stash drop
+git stash pop 
+
+## Limpiar stash
+git stage clear
