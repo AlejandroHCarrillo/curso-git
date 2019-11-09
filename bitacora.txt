@@ -28,3 +28,20 @@ Renombrar o mover un archivo usando git     git mv viejonombre.txt nuevonombre.t
 Eliminar un archivo usando git              git rm archivo.txt
 Actualiza el estatus de los archivos        git add -u 
 
+Comparar cambios entre 2 baches             git diff branch1 branch2
+
+Para hacer un merge me tengo que poner sobre el branch que va atras, luego hacer el merge del branch que va adelante
+En este caso Master esta atras de develop
+
+    *   b1cb2c5 (develop) Merge branch 'master' into develop
+    |\
+    | * 947b0f7 (HEAD -> master, curso-git/master) Agregar el .gitignore
+    | * b4b05e6 arreglando archivo README.md y bitacora.txt
+    |/
+    * 995de5d Commits eliminados y recuperados
+
+Nos cambiamos a Master
+git checkout master
+
+Hacemos el merge de develop a master (en el cual estamos parados)
+git merge develop

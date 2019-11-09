@@ -102,5 +102,35 @@ HEAD is now at a5d00b0 Commit 3 para probar soft reset
 * d1b56fb Comandos para resetear commits
 * ...
 
+## Comparar cambios entre 2 baches             
+git diff branch1 branch2
+
+Para hacer un merge me tengo que poner sobre el branch que va atras, luego hacer el merge del branch que va adelante
+En este caso Master esta atras de develop
+
+    *   b1cb2c5 (develop) Merge branch 'master' into develop
+    |\
+    | * 947b0f7 (HEAD -> master, curso-git/master) Agregar el .gitignore
+    | * b4b05e6 arreglando archivo README.md y bitacora.txt
+    |/
+    * 995de5d Commits eliminados y recuperados
+
+## Nos cambiamos a Master
+git checkout master
+
+## Hacemos el merge de develop a master (en el cual estamos parados) SIN CONFLICTOS
+git merge develop
+
+## Eliminar branches
+git branch -b [nombre-branch]
+
+## Crear Tags
+git tag [nombre-del-tag]
+git tag -a v.1.1.0 -m "Version 1.1.0"
+
+## Agregar un tag a un commit especifico (b4b05e6)
+git tag -a v.0.0.1 [b4b05e6] -m "Version inicial"
 
 
+## Eliminar Tag 
+git tag -d [nombre-del-tag]
