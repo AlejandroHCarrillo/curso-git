@@ -1,3 +1,5 @@
+# Guia de comandos de Git
+
 ## Crear el repositorio				        
 git init
 
@@ -8,26 +10,23 @@ git checkout -b develop
 git add .
 
 ## Dar commit al archivo de bitacora		
-git commit -m "Creacion de la bitacora"
+git commit -m "Commit con mensaje"
 
-* Subir los cambios al branch develop	
-* Modificar el archivo de bitacora
+git commit -am "Agrega todos los archivos al stage y hace el commit con mensaje"
 
 ## Cambiar el mensaje del ultimo commit		
-git commit --amend -m "Creacion de la bitacora de trabajo"
+git commit --amend -m "Amend cambia el mensaje del commit"
 
-## Crear el branch master			        
-git branch master
+## Crear un branch 
+git branch [nombre-del-branch]
 
-* Modificar la bitacora en el branch Master
-
-## Ver el log con formato                      
+## Crear alias para los comandos de Git, ver el log con formato
 git log --oneline --decorate --all --graph 
 
-## Crear alias para Log con formato            
+## Crear alias para vel el Log con formato
 git config --global alias.lg "log --oneline --decorate --all ## --graph"
 
-## Usar el nuevo alias                         
+## Usar el nuevo alias                    
 git lg
 
 ## Crear alias status una linea con branch     
@@ -131,6 +130,65 @@ git tag -a v.1.1.0 -m "Version 1.1.0"
 ## Agregar un tag a un commit especifico (b4b05e6)
 git tag -a v.0.0.1 [b4b05e6] -m "Version inicial"
 
-
 ## Eliminar Tag 
 git tag -d [nombre-del-tag]
+
+# Usar el STASH
+## Ver el contenido del stash
+git stash list
+
+git stash list --stat       Muestra mas informacion de cada entrada del stash
+
+gis show stash @[idStash]   Muestra el detalle de la estrada del estash
+
+## Agregar el trabajo en proceso al stash
+git stash 
+
+git stash save
+
+git stash save "Mensaje"    Guarda el trabajo en proceso con un mensaje descriptivo
+
+## Recuperar el ultimo stash
+git stash apply
+
+## Recuparar un stash especifico
+git stash apply [IdStash]
+
+## Elimina una entrada del stash
+Cuando hay conflictos no se elimina la entrada del stash, por lo que hay que hacelo manualmente
+git stash drop 
+git stash drop @[IdStash]
+
+## Aplicar y limpiar el stash git stash apply + git stash drop
+git stash pop 
+
+## Limpiar stash
+git stage clear
+
+## Rebase
+El rebase se usa para incorporar cambios de otro branch en nuestro branch de trabajo.
+Si tenemos un branch de trabajo el cual se quedo atras algunos commits con respecto a master aplicamos un rebase. Esto incorpora los cambios a master antes de nuestro branch de trabajo y pone nuestros cambios despues de los cambios de master.
+
+* Primero nos colocamos en nuestro branch de trabajo.
+
+    git checkout [branchdetrabajo]
+
+* Luego le aplicamos el rebase del branch que queremos incorporar a nuestro trabajo en este caso master 
+
+    git rebase master
+
+* Ahora nos movemos al branch master para incorporar los cambios contenidos en nuestro branch de trabajo
+
+    git checkout master
+
+* Incorporamos el branch de trabajo a master
+
+    git merge [branchdetrabajo]
+
+## Rebase - Squash
+Squash se usa para unir 2 o mas commits en uno solo. Como cuando se hacen commits de correcciones se desean unir a un commit general sin mostrar los commits con las correcciones intermedias. Para obtener los utimos commits a partir de HEAD usamos ~ ejemlpo HEAD~4.
+
+git rebase -i HEAD~4
+
+Al usar el parametro -i indicamos que sea INTERACTIVO, lo cual nos abre un editor con los commits especificados en el HEAD, osea 4. Todos los commits tienen la palabra "pick", ademas muestra
+
