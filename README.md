@@ -192,3 +192,41 @@ git rebase -i HEAD~4
 
 Al usar el parametro -i indicamos que sea INTERACTIVO, lo cual nos abre un editor con los commits especificados en el HEAD, osea 4. Todos los commits tienen la palabra "pick", ademas muestra
 
+# Enlazar a repositorio remoto
+El repositorio de git puede ser enlazado a repositorios remotos en servidores publicos o privados que nos permiten mantener el codigo seguro en la nube.
+
+https://git-scm.com/book/es/v1/Ramificaciones-en-Git-Ramas-Remotas
+
+## Agregar el servidor remoto
+git remote add origin https://github.com/AlejandroHCarrillo/curso-git.git
+
+## Ver url repositorio remoto
+git remote -v
+
+curso-git       https://github.com/AlejandroHCarrillo/curso-git.git (fetch)
+curso-git       https://github.com/AlejandroHCarrillo/curso-git.git (push)
+
+
+## Uso del PUSH
+Para subir los cambios al repositorio remoto es necesario hacer un push de la siguiente manera: 
+
+git push -u origin master
+
+* -u        Establece el branch por defecto para hacer push.
+* origin    Es el nombre del repositorio
+* master    es el branch que deseamos subir al repositorio remoto
+
+
+https://git-scm.com/book/es/v1/Git-en-un-servidor-Gitosis
+
+
+
+
+
+
+
+
+
+## Referencias
+
+https://git-scm.com/book/es/v1
