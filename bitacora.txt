@@ -41,3 +41,4 @@ git checkout master
 
 Hacemos el merge de develop a master (en el cual estamos parados)
 git merge develop
+
