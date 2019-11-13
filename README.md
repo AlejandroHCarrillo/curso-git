@@ -1,5 +1,11 @@
 # Guia de comandos de Git
 
+## Clonar un repositorio en el directorio actual
+git clone https://github.com/AlejandroHCarrillo/curso-git.git
+
+## Clonar un repositorio en un direcrorio especifico
+git clone https://github.com/AlejandroHCarrillo/curso-git.git
+
 ## Crear el repositorio				        
 git init
 
@@ -133,6 +139,9 @@ git tag -a v.0.0.1 [b4b05e6] -m "Version inicial"
 ## Eliminar Tag 
 git tag -d [nombre-del-tag]
 
+## Subir los tags al repositorio remoto
+git push --tags
+
 # Usar el STASH
 ## Ver el contenido del stash
 git stash list
@@ -219,8 +228,23 @@ git push -u origin master
 
 https://git-scm.com/book/es/v1/Git-en-un-servidor-Gitosis
 
+## Git PULL
+Git pull descarga los cambios del repositorio remoto e inmediatamente intenta hacer un merge **automaticamente**.
+
+git pull
+
+## Git FETCH
+El git fetch descarga todos los cambios del repositorio remoto pero sin hacer el merge automatico.
+
+git fetch
+
+Despues de hacer el git fetch hay que hacer un git merge o un git pull para empatar los branches al head. Si hay conflictos hay que resolverlos localmente, despues hay que darle push para subir los cambios en el repositorio remoto.
+
+_Es una buena practica hay que hacer un **fetch o un pul ANTES de subir los cambios**._
 
 
+# Tutorial de Marckdown
+[Markdown tutorial](https://www.markdowntutorial.com/)
 
 
 
@@ -229,4 +253,8 @@ https://git-scm.com/book/es/v1/Git-en-un-servidor-Gitosis
 
 ## Referencias
 
-https://git-scm.com/book/es/v1
+[Tutorial GIT en español](https://git-scm.com/book/es/v1)
+
+[Markdown tutorial](https://www.markdowntutorial.com/)
+
+[markdown-cheatsheet-online.pdf](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
