@@ -107,7 +107,7 @@ HEAD is now at a5d00b0 Commit 3 para probar soft reset
 * d1b56fb Comandos para resetear commits
 * ...
 
-## Comparar cambios entre 2 baches             
+## Comparar cambios entre 2 braches
 git diff branch1 branch2
 
 Para hacer un merge me tengo que poner sobre el branch que va atras, luego hacer el merge del branch que va adelante
@@ -199,7 +199,29 @@ Squash se usa para unir 2 o mas commits en uno solo. Como cuando se hacen commit
 
 git rebase -i HEAD~4
 
-Al usar el parametro -i indicamos que sea INTERACTIVO, lo cual nos abre un editor con los commits especificados en el HEAD, osea 4. Todos los commits tienen la palabra "pick", ademas muestra
+Al usar el parametro -i indicamos que sea INTERACTIVO, lo cual nos abre un editor con los commits especificados en el HEAD, osea 4. Todos los commits tienen la palabra "pick", ademas muestra las siguientes opciones:
+
+´´´
+# Rebase 7402030..cf4caf7 onto 7402030 (2 commands)
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+´´´
+
 
 # Enlazar a repositorio remoto
 El repositorio de git puede ser enlazado a repositorios remotos en servidores publicos o privados que nos permiten mantener el codigo seguro en la nube.
@@ -225,8 +247,7 @@ git push -u origin master
 * origin    Es el nombre del repositorio
 * master    es el branch que deseamos subir al repositorio remoto
 
-
-https://git-scm.com/book/es/v1/Git-en-un-servidor-Gitosis
+[https://git-scm.com/book/es/v1/Git-en-un-servidor-Gitosis](https://git-scm.com/book/es/v1/Git-en-un-servidor-Gitosis)
 
 ## Git PULL
 Git pull descarga los cambios del repositorio remoto e inmediatamente intenta hacer un merge **automaticamente**.
