@@ -230,6 +230,7 @@ https://git-scm.com/book/es/v1/Ramificaciones-en-Git-Ramas-Remotas
 
 ## Agregar el servidor remoto
 git remote add origin https://github.com/AlejandroHCarrillo/curso-git.git
+git remote set-url --add origin https://github.com/AlejandroHCarrillo/components-pro-curso.git
 
 ## Ver url repositorio remoto
 git remote -v
