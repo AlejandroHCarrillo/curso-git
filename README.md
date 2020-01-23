@@ -280,3 +280,6 @@ _Es una buena practica hay que hacer un **fetch o un pul ANTES de subir los camb
 [Markdown tutorial](https://www.markdowntutorial.com/)
 
 [markdown-cheatsheet-online.pdf](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## DELETING LOCAL AND REMOTE BRANCHES
+https://www.educative.io/edpresso/how-to-delete-remote-branches-in-git
