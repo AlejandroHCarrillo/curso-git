@@ -30,13 +30,13 @@ git branch [nombre-del-branch]
 git log --oneline --decorate --all --graph 
 
 ## Crear alias para vel el Log con formato
-git config --global alias.lg "log --oneline --decorate --all ## --graph"
+git config --global alias.lg "log --oneline --decorate --all --graph"
 
 ## Usar el nuevo alias                    
 git lg
 
 ## Crear alias status una linea con branch     
-git config --global alias.s "status -s -b"
+git config --global alias.sb "status -s -b"
 
 ## Ver las diferencias del archivo original    
 git diff / git diff --staged
