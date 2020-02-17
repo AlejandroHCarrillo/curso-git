@@ -230,6 +230,7 @@ https://git-scm.com/book/es/v1/Ramificaciones-en-Git-Ramas-Remotas
 
 ## Agregar el servidor remoto
 git remote add origin https://github.com/AlejandroHCarrillo/curso-git.git
+## Modificar el servidor remoto
 git remote set-url --add origin https://github.com/AlejandroHCarrillo/components-pro-curso.git
 
 ## Ver url repositorio remoto
@@ -267,11 +268,6 @@ _Es una buena practica hay que hacer un **fetch o un pul ANTES de subir los camb
 
 # Tutorial de Marckdown
 [Markdown tutorial](https://www.markdowntutorial.com/)
-
-
-
-
-
 
 ## Referencias
 
