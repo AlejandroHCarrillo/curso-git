@@ -289,7 +289,20 @@ _Es una buena practica hay que hacer un **fetch o un pul ANTES de subir los camb
 
 **git gc --prune=now** Limpia ahora mismo.
 
-# Tutorial de Marckdown
+## How To Clean Up Git Branches
+[How To Clean Up Git Branches](https://devconnected.com/how-to-clean-up-git-branches/)
+### Clean Up Local Git Branches
+First of all, you want to check which branches have already been merged with your current branch.
+In this case, we are going to imply that you want to delete local branches merged with master.
+To check merged branches, use the “git branch” command with the “–merged” option.
+
+**git checkout master**
+**git branch --merged <commit> **
+
+**feature**
+* **master**
+
+## Tutorial de Marckdown
 [Markdown tutorial](https://www.markdowntutorial.com/)
 
 ## Referencias
