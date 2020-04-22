@@ -3,7 +3,7 @@
 ## Clonar un repositorio en el directorio actual
 git clone https://github.com/AlejandroHCarrillo/curso-git.git
 
-## Clonar un repositorio en un direcrorio especifico
+## Clonar un repositorio en un directorio especifico
 git clone https://github.com/AlejandroHCarrillo/curso-git.git
 
 ## Crear el repositorio				        
@@ -128,6 +128,25 @@ git merge develop
 
 ## Eliminar branches
 git branch -b [nombre-branch]
+
+## Deshacer todos los cambios sin salvar o uncommitted 
+
+[git undo all uncommitted or unsaved changes](https://stackoverflow.com/questions/14075581/git-undo-all-uncommitted-or-unsaved-changes
+
+* git reset
+* git checkout .
+* git clean -fdx
+
+**git reset** will unstage all files you might have staged with **git add**.
+
+**git checkout** will revert all local uncommitted changes (should be executed in repo root).
+You can also revert uncommitted changes only to particular file or directory:
+**git checkout _[some_dir|file.txt]_**
+
+**git clean -fdx** will remove all local untracked files, so only git tracked files remain.
+
+
+
 
 ## Crear Tags
 git tag [nombre-del-tag]
@@ -265,6 +284,10 @@ Despues de hacer el git fetch hay que hacer un git merge o un git pull para empa
 
 _Es una buena practica hay que hacer un **fetch o un pul ANTES de subir los cambios**._
 
+## Limpiar el repositorio local
+[git gc](https://git-scm.com/docs/git-gc) **git gc** - Cleanup unnecessary files and optimize the local repository
+
+**git gc --prune=now** Limpia ahora mismo.
 
 # Tutorial de Marckdown
 [Markdown tutorial](https://www.markdowntutorial.com/)
