@@ -300,7 +300,13 @@ To check merged branches, use the “git branch” command with the “–merged
 **git branch --merged <commit> **
 
 **feature**
-* **master**
+**master**
+
+## How to remove local untracked files from the current Git branch
+
+[How to remove local untracked files from the current Git branch](https://koukia.ca/how-to-remove-local-untracked-files-from-the-current-git-branch-571c6ce9b6b1)
+
+**git clean -fd**
 
 ## Tutorial de Marckdown
 [Markdown tutorial](https://www.markdowntutorial.com/)
