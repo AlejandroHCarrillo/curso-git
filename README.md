@@ -127,7 +127,11 @@ git checkout master
 git merge develop
 
 ## Eliminar branches
-git branch -b [nombre-branch]
+git branch -d [nombre-branch]
+
+## Eliminar branche Remoto
+Despues de eliminar el branch local
+git push origin -d [nombre-branch]
 
 ## Deshacer todos los cambios sin salvar o uncommitted 
 
@@ -321,3 +325,5 @@ To check merged branches, use the “git branch” command with the “–merged
 
 ## DELETING LOCAL AND REMOTE BRANCHES
 https://www.educative.io/edpresso/how-to-delete-remote-branches-in-git
+
+https://www.freecodecamp.org/news/git-delete-remote-branch/
